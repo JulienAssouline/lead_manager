@@ -17,6 +17,11 @@ function Form(props) {
   function onSubmit(e) {
     e.preventDefault();
     props.addLead(formValue);
+    setFormValue({
+      name: "",
+      email: "",
+      message: ""
+    });
   }
 
   return (
